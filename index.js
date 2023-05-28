@@ -3,6 +3,9 @@ const cors = require('cors');
 const app= express()
 
 app.use(cors());
+app.use(cors({
+  origin: 'https://64732e8d1619082276f2ebab--vocal-nasturtium-88360c.netlify.app/',
+}));
 require("dotenv").config()
 
 const PORT=process.env.PORT||5000
