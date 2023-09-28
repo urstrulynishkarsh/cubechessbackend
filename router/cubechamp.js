@@ -6,7 +6,7 @@ const {createStudent}=require('../controller/createStudent')
 
 const {createTeacher}=require('../controller/createTeacher')
 
-const {getVisitorCount}=require('../controller/CheckVisiter')
+const {increment,getCount}=require('../controller/CheckVisiter')
 
 
 
@@ -15,8 +15,8 @@ const {getVisitorCount}=require('../controller/CheckVisiter')
 router.post("/createUser",createStudent)
 router.post("/createTeacher",createTeacher)
 
-router.get("/",getVisitorCount);
-
+router.post("/increment",increment);
+router.get("/getcount",getCount)
 
 
 
