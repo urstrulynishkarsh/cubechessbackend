@@ -1,5 +1,6 @@
 // Importing the Mongoose library
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', false);
 
 // Importing the environment variables using the dotenv library
 require("dotenv").config();
